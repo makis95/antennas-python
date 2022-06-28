@@ -40,7 +40,6 @@ D = 10*np.log10(K)
 print('Directivity is '+str(D)+' dB')
 
 
-
 #plot  Radiation Pattern
 plt.figure(figsize=(30, 30)) 
 plt.axes(projection = 'polar')
@@ -49,20 +48,6 @@ plt.title(' Radiation Pattern of a '+str(K)+
           ' omnidirectional element phased array at '+str(f/1e9)+
           ' GHz at '+str(np.rad2deg(theta0))+' degrees')
 plt.show()
-
-#3D radiation Pattern
-#THETA, PHI = np.meshgrid(theta, phi)
-#R = S_u1
-#X = R * np.sin(PHI) * np.cos(THETA)
-#Y = R * np.sin(PHI) * np.sin(THETA)
-#Z = R * np.cos(PHI)
-#fig = plt.figure()
-#ax = fig.add_subplot(1,1,1, projection='3d')
-#plot = ax.plot_surface(
-#    X, Y, Z, rstride=1, cstride=1, cmap=plt.get_cmap('jet'),
-#    linewidth=0, antialiased=False, alpha=0.5)
-#
-#plt.show()
 
 
 
